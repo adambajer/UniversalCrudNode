@@ -5,7 +5,9 @@
     "main": "app.js",
     "scripts": {
       "start": "node app.js",
-      "dev": "nodemon app.js"
+      "dev": "nodemon app.js",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
     },
     "dependencies": {
       "express": "^4.17.1",
